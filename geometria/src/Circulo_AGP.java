@@ -4,10 +4,17 @@ public class Circulo_AGP extends FiguraGeometrica_AGP {
 	//Constante pi
 	static final double PI = 3.1416;
 	
+	
+	
 	public Circulo_AGP(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
-	}
+		if(radio < 0 ) {
+			radio= radio*-1;
+			}
+		
+		}
+	
 
 	@Override
 	public double area() {
